@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Método de pago</title>
+    <link rel = "stylesheet" href = "Css\style8.css"/>
+    <link rel="icon" type="image/png" href="Img/Logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Montserrat 300 thin -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 500 medium -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 700 bold -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!--Barra con logo-->
+    <div id = "barraconlogo">
+        <img src = "Img/Logo.png" class = "imagenbarra"/>
+        <p>Cafestodo</p>
+    </div>
+
+    <!--Define la parte derecha de la pagina-->
+     <!--Define la parte derecha de la pagina-->
+
+     <div >
+        <img class="imagen-derecha" src="Img/4.Cafestodo.jpg" alt="Descripción de la imagen">
+    </div>
+     <!--Define la parte de la pagina-->
+
+     <div class = "abajo">
+
+        <form class = "contenedor-formulario">
+
+            <h1>Método de pago</h1>
+            <h3>Cafestodo esta contigo</h3>
+            <input type="text" name="colonia" placeholder="Paypal" >
+            <input type="text" name="calle" placeholder="Pago con tarjeta">
+            <input type="text" name="codigo postal" placeholder="Efectivo">
+
+            <div class="contenedor-botones">
+
+                <button onclick="accederDos()" type="button" class="boton-acceder">Confirmar</button>
+                <button onclick="accederDos()" type="button" class="boton-acceder2">Regresar a la página de inicio</button>
+
+                <!--Funciones que dirigen a distintas páginas-->
+
+                <script>
+                    function accederDos() {
+                        window.location.href = 'inicio.html';
+                    }
+                  </script>
+                  
+            </div>
+        </form>
+        <a href="https://wa.me/523223014412?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso</title>
+    <link rel = "stylesheet" href = "Css\style2.css"/>
+    <link rel="icon" type="image/png" href="Img/Logo.png">
+
+
+    <!-- Montserrat 300 thin -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 500 medium -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 700 bold -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id = "barraconlogo">
+        <img src = "Img/Logo.png" class = "imagenbarra"/>
+        <p>Cafestodo</p>
+    </div>
+    <section>
+
+        <!--Titulo y subtitulo-->
+        <h1 class = "titulo">Acceso</h1>
+        <h2 class = "subtitulo">Click para continuar</h3>
+
+            <!--Formulario-->
+            <div class="contenedor-formulario">
+                <form>
+                    <!--Inicio de textboxes-->
+
+                  <label for="correo">CORREO:</label>
+                  <input type="email" id="correo" name="correo" placeholder="Correo">
+                  <label for="contraseña">CONTRASEÑA:</label>
+                  <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+
+                    <!--Boton del formulario-->
+
+                    <div class="contenedor-botones">
+
+                        <button onclick="accederDos()" type="button" class="boton-acceder">Continuar</button>
+
+                        <!--Funciones que dirigen a distintas páginas-->
+
+                        <script>
+                            function accederDos() {
+                                window.location.href = 'inicio.html';
+                            }
+                          </script>
+                          
+                    </div>
+
+                </form>
+              </div>
+    </section>
+    <footer>
+        <a href="https://www.facebook.com/sol.mendiola.923"> © Jimena Soledad Conte Mendiola</a>
+        <p>Proyecto Final</p>
+    </footer>
+</body>
+</html>

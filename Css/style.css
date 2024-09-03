@@ -1,0 +1,146 @@
+    /* Modificador general */
+html{
+    font-family: Montserrat, sans-serif;
+    background-color: #9B8C7A;
+}
+/*--------------------------*/
+
+    /* Modificadores de barra */
+
+.imagenbarra {
+    width: 50px;
+    padding-left: 10px;
+    float: left;
+    margin: 0 auto;
+}
+div p{
+    position:absolute;
+    margin: 0;
+    left: 70px;
+    font-weight: 700;
+    font-size:40px;
+}
+#barraconlogo{
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 810px;
+    right: 0;
+    left: 0;
+    border: 2px solid #000;
+}
+/*--------------------------*/
+
+    /* Modificadores de titulo y subtitulo */
+.titulo{
+    font-weight: 500;
+    font-size:65px;
+    text-align: center;
+    padding: 120px 80px 20px;
+    margin: 0;
+}
+.subtitulo{
+    font-weight: 500;
+    /* font-size: 15px; */
+    text-align: center;
+    margin: 0;
+    /* padding: 80px; */
+}
+/*--------------------------*/
+
+    /*Modificadores de formulario*/
+
+    /*Accede a todos los elementos en form*/
+
+    .contenedor-formulario {
+        text-align: center;
+      }
+      
+      form {
+        display: inline-block;
+        text-align: center;
+      }
+      
+      label { 
+        font-weight: 500;
+        text-align: left;
+        position: relative;
+        left: 70px;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+      
+      input {
+        font-weight: 700;
+        width: 200px;
+        padding: 8px;
+        margin-bottom: 15px;
+      }
+      /*Accede a combobox*/
+      select {
+        font-size: 12px;
+        width: 63.7px;
+        padding: 8px;
+        margin-right: 10px;
+      }
+      /*Cambia apariencia y acción de ambos botones*/
+
+      .contenedor-botones {
+        text-align: center;
+      }
+      
+      .boton-registrarse,
+      .boton-acceder {
+        margin-top: 35px;
+        margin-right: 5px;
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        width: 180px; /* Ancho fijo para ambos botones */
+        display: inline-block; /* Para que estén uno sobre otro */
+        margin-bottom: 10px; /* Espacio entre los botones */
+        background-color: black;
+      }
+      
+      
+      /* Cambios al pasar el mouse por encima */
+      .boton-registrarse:hover,
+      .boton-acceder:hover {
+        transition: color 0.6s ease;
+        background-color: white;
+        color: black;
+      }
+/*--------------------------*/
+
+  /*Modifica el footer*/
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  footer a{
+    transition: color 0.3s ease;
+    color: black;
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+  
+  footer p {
+    margin: 5px 0 0; /* Ajuste los márgenes según lo necesite */
+  }  
+  
+  /*--------------------------*/
+

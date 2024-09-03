@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel = "stylesheet" href = "Css\style3.css"/>
+    <link rel="icon" type="image/png" href="Img/Logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Montserrat 300 thin -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 500 medium -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 700 bold -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+    <body>
+        <!--Barra de menu con sus componentes-->
+        <div id="barraconlogo">
+            <img src="Img/Logo.png" alt="Logo de Cafestodo" class="imagenbarra"/>
+            <p>Cafestodo</p>
+            <input type="text" placeholder="Buscar (Bebidas, locales, etc.)" class="input-busqueda">
+            <img src = "Img/User_Logo.png" alt="Logo de usuario" class = "imagenbarra2"/>
+
+        </div>
+        <!--Articulo de mitad y hacia arriba-->
+        <article>
+            <img src="Img/Cafe_Fresas.png" alt="cafe y fresas" class="CyF"/>
+            <h1 class = "derecha">Cafestodo</h1>
+
+            <ul class = "derecha">
+                <li>Descubre el sabor y la energía</li>
+                <li>en cada sorbo con nuestra</li>
+                <li>exquisita selección de cafés</li>
+            </ul>
+
+            <!--Boton de lugar-->
+
+            <div class="contenedor-boton">
+                
+                <button onclick="accederDos()" type="button" class="boton-acceder">Ordena aquí</button>
+
+                <!--Funciones que dirigen a distintas páginas-->
+
+                <script>
+                    function accederDos() {
+                        window.location.href = 'lugares.html';
+                    }
+                  </script>
+        </article>
+
+        <section>
+            <div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                  <img src="Img/Chocolate.png" class="slide" height="250"/>
+                  <img src="Img/Dark_Chocolate.png" class="slide" height="250" />
+                  <img src="Img/Tiramisu.png" class="slide"  height="250" />
+                </div>
+                <div class="buttons">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+              </div>
+        </section>
+
+        <section class="contenedor-lista">
+            <div class="lista-beneficios">
+                <h3>¿Por qué comprar con nosotros?</h3>
+                 <ul>
+                    <li>Precios Accesibles
+                    <li>Variedad de Sabores
+                    <li>Eficiencia
+                    <li>Calidad
+                    </ul>   
+                </li>
+            </div>
+        </section>
+        <p></p>
+        <!--Widget-->
+        <a href="https://wa.me/523223014412?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </body>
+</html>

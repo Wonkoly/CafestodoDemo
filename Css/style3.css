@@ -1,0 +1,233 @@
+/* Modificador general */
+html {
+    font-family: Montserrat, sans-serif;
+    background-color: white;
+  }
+  /*--------------------------*/
+  
+  /* Modificadores de barra */
+  .imagenbarra {
+    max-width: 50px;
+    padding-left: 10px;
+    float: left;
+    margin: 0 auto;
+  }
+
+  .imagenbarra2 {
+    max-width: 40px;
+    padding-top: 5px;
+    float: right;
+    padding-right: 25px;
+    margin: 0 auto;
+  }
+  
+  div p {
+    position: absolute;
+    margin: 0;
+    left: 70px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  #barraconlogo {
+    border-radius: 5px;
+    background-color: #E1D0BB;
+    position: absolute;
+    top: 0px;
+    bottom: 810px;
+    right: 0;
+    left: 0;
+    border: 2px solid #000;
+  }
+  
+
+/* Define el estilo del input */
+.input-busqueda {
+    border-radius: 5px;
+    text-align: left;
+    font-weight: 700;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    height: 25px;
+    width: 250px;
+    overflow: hidden; /* Para ocultar el texto del placeholder que se desborda */
+  }
+  
+  /* Define el estilo del placeholder */
+  .input-busqueda::placeholder {
+    white-space: nowrap; /* Evita el salto de línea */
+    transition: transform 1s linear; /* Define la transición */
+  }
+  
+  /* Aplica la animación al placeholder */
+  .input-busqueda:focus::placeholder {
+    transform: translateX(-100%); /* Mueve el placeholder hacia la derecha */
+  }
+  
+  /*--------------------------*/
+
+  /*Establece configuraciones de imagen*/
+
+  .CyF{
+    margin-top: 100px;
+    float: left; 
+    margin-left: 200px;
+    /* display: inline-block; */
+    /* width: 500px; */
+  }
+
+  /*--------------------------*/
+
+
+   /*Establece configuraciones del texto a lado de la imagen*/
+
+  .derecha{
+    font-weight: 200;
+    font-size: 60px;
+    color: rgb(65, 63, 63);
+
+    margin-top: 150px;
+    margin-bottom: 0;
+    float: right;
+    margin-right: 645px;
+  }
+  ul.derecha{
+    font-weight: 700;
+    font-size: 55px;
+    color: #000;
+    text-align: left;
+
+    margin-top: 0;
+    padding-top: 0;
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+  }
+
+  li{
+    margin-top: 10px;
+  }
+  
+
+  /*--------------------------*/
+  /*Cambia apariencia y acción del boton*/
+
+  .contenedor-boton {
+    text-align: center;
+  }
+  
+  .boton-acceder {
+    margin-top: 1%;
+    margin-right: 37.5%;
+
+    position: flex;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 8px;
+    font-weight: 100;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    width: 180px; /* Ancho fijo para ambos botones */
+    display: inline-block; /* Para que estén uno sobre otro */
+    margin-bottom: 10px; /* Espacio entre los botones */
+    background-color: black;
+  }
+  
+
+  
+  /* Cambios al pasar el mouse por encima */
+  .boton-acceder:hover {
+    transition: color 0.6s ease;
+    background-color: gray;
+    color: black;
+  }
+/*--------------------------*/
+
+/*Slideshow de imagenes*/
+
+.slider {
+  width: 900px;
+  height: 300px;
+  /* background-color: yellow; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px; 
+  /* background-color: pink; */
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0 40px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -150px;
+}
+#slide-3:target ~ .image-container {
+  left: -300px;
+}
+.buttons {
+  position: relative;
+  top: -50px;
+}
+.buttons a {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50px;
+  background-color: black;
+}
+
+/*--------------------------*/
+
+
+.whatsapp {
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.whatsapp-icon {
+  margin-top:13px;
+}
+  
+section.contenedor-lista {
+  margin-left: 20%;
+  font-size: 23px;
+}
+
+;
+
+
+
+
+
+  
+  

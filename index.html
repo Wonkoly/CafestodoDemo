@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel = "stylesheet" href = "Css\style.css"/>
+    <link rel="icon" type="image/png" href="Img/Logo.png">
+
+
+    <!-- Montserrat 300 thin -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 500 medium -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Montserrat 700 bold -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id = "barraconlogo">
+        <img src = "Img/Logo.png" class = "imagenbarra"/>
+        <p>Cafestodo</p>
+    </div>
+    <section>
+
+        <!--Titulo y subtitulo-->
+        <h1 class = "titulo">Crear una nueva cuenta</h1>
+        <h2 class = "subtitulo">¿Esta registrad@ en cafestodo?</h3>
+
+            <!--Formulario-->
+            <div class="contenedor-formulario">
+                <form>
+                    <!--Inicio de textboxes-->
+
+                  <label for="usuario">USUARIO:</label>
+                  <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+                  <label for="correo">CORREO:</label>
+                  <input type="email" id="correo" name="correo" placeholder="Correo">
+                  <label for="contraseña">CONTRASEÑA:</label>
+                  <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+
+                    <!--Inicio de combobox-->
+
+                    <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                    <div class="fecha-nacimiento">
+
+                        <select id="dia" name="dia">
+                        <option value="" selected>Día</option>
+                        <!-- Opciones del día -->
+                       
+                        </select>
+                        <select id="mes" name="mes">
+                        <option value="" selected>Mes</option>
+                        <!-- Opciones del mes -->
+                        
+                        </select>
+                        <select id="año" name="año">
+                        <option value="" selected>Año</option>
+                        <!-- Opciones del año -->
+                        
+                        </select>
+                    </div>
+
+                    <!--Botones del formulario-->
+
+                    <div class="contenedor-botones">
+                        <button onclick="accederUno()" type= "button" class="boton-registrarse">Registrarse</button>
+                        <button onclick="accederDos()" type="button" class="boton-acceder">Acceder sin registro</button>
+
+                        <!--Funciones que dirigen a distintas páginas-->
+
+                        <script>
+                            function accederUno() {
+                                window.location.href = 'acceso.html';
+                            }
+                            function accederDos() {
+                                window.location.href = 'inicio.html';
+                            }
+                          </script>
+                          
+                    </div>
+
+                </form>
+              </div>
+    </section>
+    <footer>
+        <a href="https://cafestodo.com/"> © Pagina Oficial</a>
+        <p>Proyecto Final</p>
+    </footer>
+</body>
+</html>
