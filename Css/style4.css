@@ -644,8 +644,9 @@ a:hover {
 }
 
 .mapa1 {
-  max-width: 100%;
-  height: auto;
-  margin-top: 50%;
+  width: 700px;
+  height: 700px;
+  margin-top: 6%;
+  margin-left: 6%;
   /* Ajusta la altura según sea necesario */
 }
