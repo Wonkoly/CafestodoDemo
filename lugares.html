@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Lugares cerca</title>
-    <link rel = "stylesheet" href = "Css\style4.css"/>
+    <link rel="stylesheet" href="Css\style4.css" />
     <link rel="icon" type="image/png" href="Img/Logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -12,7 +13,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@300;500&display=swap"
+        rel="stylesheet">
 
     <!-- Montserrat 500 medium -->
 
@@ -24,103 +27,118 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+
 </head>
-    <body>
-        <audio id="fondoAudio" src="Img/musica.mp3" autoplay loop></audio>
-        <!--Barra de menu con sus componentes-->
-        <div id="barraconlogo">
-            <img src="Img/Logo.png" alt="Logo de Cafestodo" class="imagenbarra"/>
-            <p>Cafestodo</p>
-            <input type="text" placeholder="Buscar (Bebidas, locales, etc.)" class="input-busqueda">
-            <img src = "Img/User_Logo.png" alt="Logo de usuario" class = "imagenbarra2"/>
 
-        </div>
-        <div>
-            <section>
-                <img src="Img/mapa.png" alt="Mapa" class="imagen-izquierda"/>
-            </section>
-            <section id = "derecha">
-                <ul class="derecha">
-                    <li>Cafestodo de la zona, </li>
-                    <li>PuertoVallarta</li>
-                </ul>
-            </section>
-            <section id = "rightbody">
-                <div id="search">
-                    <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="bar"/>
-                        
-                        <g class="magnifier">
-                            <circle class="glass"/>
-                            <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
-                        </g>
-                
-                        <g class="sparks">
-                            <circle class="spark"/>
-                            <circle class="spark"/>
-                            <circle class="spark"/>
-                        </g>
-                
-                        <g class="burst pattern-one">
-                            <circle class="particle circle"/>
-                            <path class="particle triangle"/>
-                            <circle class="particle circle"/>
-                            <path class="particle plus"/>
-                            <rect class="particle rect"/>
-                            <path class="particle triangle"/>
-                        </g>
-                        <g class="burst pattern-two">
-                            <path class="particle plus"/>
-                            <circle class="particle circle"/>
-                            <path class="particle triangle"/>
-                            <rect class="particle rect"/>
-                            <circle class="particle circle"/>
-                            <path class="particle plus"/>
-                        </g>
-                        <g class="burst pattern-three">
-                            <circle class="particle circle"/>
-                            <rect class="particle rect"/>
-                            <path class="particle plus"/>
-                            <path class="particle triangle"/>
-                            <rect class="particle rect"/>
-                            <path class="particle plus"/>
-                        </g>
-                    </svg>
-                    <input type=text name=q/>
-                </div>
-            </section>
+<body>
+    <audio id="fondoAudio" src="Img/musica.mp3" autoplay loop></audio>
+    <!--Barra de menu con sus componentes-->
+    <div id="barraconlogo">
+        <img src="Img/Logo.png" alt="Logo de Cafestodo" class="imagenbarra" />
+        <p>Cafestodo</p>
+        <input type="text" placeholder="Buscar (Bebidas, locales, etc.)" class="input-busqueda">
+        <img src="Img/User_Logo.png" alt="Logo de usuario" class="imagenbarra2" />
 
-            <!--Publicaciones de ubicacion-->
+    </div>
+    <div>
+        <section>
+            <iframe class="mapa1" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7309.018536353377!2d-105.23350561252063!3d20.656861187108714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafestodo!5e0!3m2!1ses-419!2smx!4v1725516011868!5m2!1ses-419!2smx"
+             width="600" 
+             height="450" 
+             style="border:0;" 
+             allowfullscreen="" 
+             loading="lazy" 
+             referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 
-            <article class="locationcontainer">
-                <div class="post-container">
-                    <a href ="ubicacion.html" class="post">
-                        <img src="Img/Local.png" width="125" height="100">
-                        <div class="post-content">
-                            <h2>Cafestodo Galerias</h2>
-                            <ul>
-                                <li>Entrega disponible en 15 minutos.</li>
-                                <li class="abajo">2.5km.</li>
-                            </ul>
-                        </div>
-                    </a>
-                    <a href ="ubicacion.html" class="post">
-                        <img src="Img/InteriorLocal.png" width="125" height="100">
-                        <div class="post-content">
-                            <h2>Cafestodo Aramara</h2>
-                            <ul>
-                                <li>Entrega disponible en 35 minutos.</li>
-                                <li class = "abajo">5km.</li>
-                            </ul>
-                        </div>
-                    </a>
-                </div>
-            </article>
-            
-        </div>
-        <a href="https://wa.me/523223014412?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+            <!-- 
+            <i>mg src="Img/mapa.png" alt="Mapa" class="imagen-izquierda" /> -->
+        </section>
+        <section id="derecha">
+            <ul class="derecha">
+                <li>Cafestodo de la zona, </li>
+                <li>PuertoVallarta</li>
+            </ul>
+        </section>
+        <section id="rightbody">
+            <div id="search">
+                <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="bar" />
 
-    </body>
+                    <g class="magnifier">
+                        <circle class="glass" />
+                        <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+                    </g>
+
+                    <g class="sparks">
+                        <circle class="spark" />
+                        <circle class="spark" />
+                        <circle class="spark" />
+                    </g>
+
+                    <g class="burst pattern-one">
+                        <circle class="particle circle" />
+                        <path class="particle triangle" />
+                        <circle class="particle circle" />
+                        <path class="particle plus" />
+                        <rect class="particle rect" />
+                        <path class="particle triangle" />
+                    </g>
+                    <g class="burst pattern-two">
+                        <path class="particle plus" />
+                        <circle class="particle circle" />
+                        <path class="particle triangle" />
+                        <rect class="particle rect" />
+                        <circle class="particle circle" />
+                        <path class="particle plus" />
+                    </g>
+                    <g class="burst pattern-three">
+                        <circle class="particle circle" />
+                        <rect class="particle rect" />
+                        <path class="particle plus" />
+                        <path class="particle triangle" />
+                        <rect class="particle rect" />
+                        <path class="particle plus" />
+                    </g>
+                </svg>
+                <input type=text name=q />
+            </div>
+        </section>
+
+        <!--Publicaciones de ubicacion-->
+
+        <article class="locationcontainer">
+            <div class="post-container">
+                <a href="ubicacion.html" class="post">
+                    <img src="Img/Local.png" width="125" height="100">
+                    <div class="post-content">
+                        <h2>Cafestodo Galerias</h2>
+                        <ul>
+                            <li>Entrega disponible en 15 minutos.</li>
+                            <li class="abajo">2.5km.</li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="ubicacion.html" class="post">
+                    <img src="Img/InteriorLocal.png" width="125" height="100">
+                    <div class="post-content">
+                        <h2>Cafestodo Aramara</h2>
+                        <ul>
+                            <li>Entrega disponible en 35 minutos.</li>
+                            <li class="abajo">5km.</li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </article>
+
+    </div>
+    <a href="https://wa.me/523223014412?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+        target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+</body>
+
 </html>
